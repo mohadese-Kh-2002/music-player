@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>player music</title>
+    <link rel="stylesheet" href="./styles/plugin/fontawesome.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+
+<body class=" font-sans h-dvh flex justify-center items-center ">
+    <section class="player flex flex-col justify-between   h-2/4 max-w-xl w-full rounded-lg bg-amber-100 p-10">
+
+        <audio id="music-player" src="./media/1.mp3"></audio>
+        <img src="./image/1.jpg" alt="music" class="music-img rounded-lg">
+        <span class="wrapper-icon-heart"><i class="far fa-heart  icon-heart" title="favorite ?"></i></span>
+        <h2 class="music__title text-center font-bold text-white">MUSIC 01</h2>
+        <div class="music__controls">
+            <div class="line-out w-full overflow-hidden bg-white">
+                <div class="line-in h-full bg-amber-400"></div>
+            </div>
+            <div class="wrapper__controls flex items-center justify-between w-full mt-5 ">
+                <span id="repeat">
+                    <i class="fas fa-arrow-rotate-right fa-2x text-white icon"></i>
+                </span>
+                <span id="backward">
+
+                    <i class="fas fa-backward-step fa-2x text-white"></i>
+                </span>
+                <span id="play">
+                    <i class="fas fa-play fa-2x text-white"></i>
+                </span>
+                <span id="forward">
+                    <i class="fas fa-forward-step fa-2x text-white" id="forward"></i>
+                </span>
+                <span id="shuffle">
+                    <i class="fas fa-shuffle fa-2x text-white icon"></i>
+                </span>
+            </div>
+            
+        </div>
+    </section>
+    <script src="./scripts/plugins/fontawesome.min.js"></script>
+    <script src="./scripts/plugins/tailwind.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>
